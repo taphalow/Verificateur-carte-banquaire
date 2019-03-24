@@ -5,10 +5,11 @@ import cAbstraite.IVerifCarte;
 public class Test {
 
 	public static void main(String[] args) {
-		IVerifCarte visaVerif = new CarteVisaVerif();
+		
+		IVerifCarte visaVerif = new MasterCardVerif();
 		CarteVerififcateur verificateur = new CarteVerififcateur(visaVerif);
-		verificateur.faireVerification("5978210033328381");
-
+		verificateur.faireVerification("5326351192003591");
+		
 	}
 
 }
